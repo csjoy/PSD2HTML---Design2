@@ -1,0 +1,359 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* Nav */
+.nav_custom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(5px);
+}
+
+/* Header */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/head.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.header span {
+  color: red;
+}
+
+.mt-10 {
+  margin-top: 100px;
+}
+
+.btn_custom,
+.btn_custom:link,
+.btn_custom:hover {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 26px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 1px;
+}
+
+.banner {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 16px 0;
+}
+
+.profile_banner {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner_icons {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  font-size: 32px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.banner_icons a {
+  color: white;
+  font-size: 24px;
+}
+
+.banner_icons li{
+  padding: 0 14px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner_icons li:hover{
+  padding: 0 14px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+
+.banner_icons li:hover a{
+  color: black;
+}
+
+/* .banner_icons a:hover {
+  color: black;
+} */
+
+.banner_text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.px_custom {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* About */
+.primary_heading {
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
+}
+
+.primary_heading span {
+  color: red;
+}
+
+.hr_div {
+  position: relative;
+  width: 96px;
+  margin: 0 auto;
+}
+
+.hr {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.hr_div::after {
+  content: "";
+  clear: both;
+  display: block;
+
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -4px;
+  left: 43px;
+}
+
+/* Video */
+.video {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/about.png);
+  background-size: cover;
+  color: white;
+}
+
+.video_title {
+  margin-bottom: 32px;
+}
+
+.video span {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 15%;
+}
+
+.row span {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: red;
+}
+
+/* Skill */
+.pro-out {
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 7px;
+  color: white;
+  font-size: 11px;
+  text-align: right;
+  position: relative;
+}
+
+.pro-out h4 {
+  padding-top: 2px;
+}
+
+.pro-in {
+  height: 6px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+  left: 3px;
+  bottom: 30%;
+}
+
+.develop {
+  width: 60%;
+}
+
+.design {
+  width: 70%;
+}
+
+.graphic {
+  width: 80%;
+}
+
+.font_custom {
+  font-size: 10px;
+}
+
+.bg1 {
+  background-color: #f3f3f3;
+}
+
+/* Client */
+.client {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/client.png);
+  background-size: cover;
+  color: white;
+}
+
+.happy_client {
+  text-align: center;
+  font-size: 24px;
+}
+
+.happy_client span {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* Portfolio */
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-transform: uppercase;
+  padding-left: 0;
+  margin-bottom: 48px;
+}
+
+.tabs a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.pic:hover .overlay {
+  display: block;
+}
+
+.pic .overlay {
+  display: none;
+  background-color: rgba(255, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Team */
+.team {
+  background-color: #e1e1e1;
+}
+
+.overlay_banner {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+/* Comment */
+.comment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/coding.png);
+  background-size: cover;
+  color: white;
+}
+
+/* Blog */
+.btn_blog,
+.btn_blog:link,
+.btn_blog:hover {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 1px;
+}
+
+.date {
+  color: #868e96;
+}
+.red {
+  color: red;
+}
+
+/* Contact */
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/contact.png);
+  background-size: cover;
+  color: white;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_info input {
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 24px;
+  border-radius: 9px;
+  width: 49%;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+textarea {
+  outline: none;
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  height: 160px;
+  padding: 12px 24px;
+  border-radius: 9px;
+  margin-bottom: 24px;
+}
+
+/* Footer */
+.icons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.icons li a {
+  color: white;
+}
+
+footer p,
+footer ul {
+  margin-bottom: 0;
+}
